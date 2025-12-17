@@ -1,0 +1,11 @@
+{
+  "image": "mcr.microsoft.com",
+  "features": {
+    "ghcr.io/devcontainers/features/apt-get:1": {
+      "installCommands": [
+        "apt-get update && apt-get install -y nasm gcc gdb"
+      ]
+    }
+  },
+  "postCreateCommand": "nasm --version && gcc --version"
+}
